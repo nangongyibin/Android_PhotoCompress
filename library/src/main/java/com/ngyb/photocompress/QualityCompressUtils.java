@@ -9,7 +9,7 @@ import java.io.IOException;
 
 /**
  * 作者：南宫燚滨
- * 描述：
+ * 描述：质量压缩
  * 邮箱：nangongyibin@gmail.com
  * 日期：2020/7/27 12:24
  */

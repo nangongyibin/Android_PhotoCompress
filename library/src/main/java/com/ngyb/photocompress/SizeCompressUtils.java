@@ -11,7 +11,7 @@ import java.io.IOException;
 
 /**
  * 作者：南宫燚滨
- * 描述：
+ * 描述：尺寸压缩
  * 邮箱：nangongyibin@gmail.com
  * 日期：2020/7/27 13:45
  */
@@ -23,7 +23,7 @@ public class SizeCompressUtils {
      * @param bitmap 需要压缩Bitmap图片对象
      * @param file   压缩后图片保存的地址
      * @param ratio  尺寸压缩倍数，值越大，图片尺寸越小
-     * @param config
+     * @param config 默认用ARGB_8888——代表32位ARGB位图
      * @param format 压缩后的图片的格式 默认Bitmap.CompressFormat.JPEG
      */
     public static void sizeCompress(Bitmap bitmap, File file, int ratio, Bitmap.Config config, Bitmap.CompressFormat format) {
