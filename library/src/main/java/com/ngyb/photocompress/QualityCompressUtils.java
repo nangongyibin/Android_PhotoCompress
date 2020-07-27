@@ -21,10 +21,14 @@ public class QualityCompressUtils {
      *
      * @param bitmap  需要压缩Bitmap图片对象
      * @param file    压缩后图片保存的地址
-     * @param format  压缩后的图片的格式
+     * @param format  压缩后的图片的格式  默认Bitmap.CompressFormat.JPEG
      * @param quality 0-100 100代表不压缩
      */
     public static void qualityCompress(Bitmap bitmap, File file, Bitmap.CompressFormat format, int quality) {
+        if (format == null) {
+            //默认Bitmap.CompressFormat.JPEG
+            format = Bitmap.CompressFormat.JPEG;
+        }
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         //将压缩后的数据存放到ByteArrayOutputStream中
         bitmap.compress(format, quality, baos);
