@@ -37,7 +37,7 @@ public class SizeCompressUtils {
         // 创建Rect
         Rect rect = new Rect(0, 0, bitmap.getWidth() / ratio, bitmap.getHeight() / ratio);
         // 创建画布
-        Canvas canvas = new Canvas(bitmap);
+        Canvas canvas = new Canvas(result);
         // 画图
         canvas.drawBitmap(result, null, rect, null);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
